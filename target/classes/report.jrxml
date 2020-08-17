@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74e55482-7ad2-493f-9f5a-ba7c6db4b4d0">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="name" class="java.lang.String"/>
+    <field name="dateOfBirth" class="java.lang.String"/>
+    <background>
+        <band height="84" splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="55" splitType="Stretch">
+            <staticText>
+                <reportElement x="200" y="11" width="49" height="30" uuid="0a74463b-689b-4f6a-9a90-13d840cac64e"/>
+                <text><![CDATA[Resume ]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="11" width="9" height="30" uuid="527169b4-0336-4879-ad96-f436cfd67835"/>
+                <text><![CDATA[-]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="260" y="11" width="280" height="30" uuid="8dd298b2-7d65-4c42-a04d-c0a466e12c59"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="71" splitType="Stretch">
+            <staticText>
+                <reportElement x="181" y="0" width="68" height="20" uuid="0e3c4e32-c3fa-4a7e-a136-4bc95b283e5c"/>
+                <text><![CDATA[Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="181" y="20" width="68" height="18" uuid="d12aa12c-fb10-4a2d-974c-a7da03c08295"/>
+                <text><![CDATA[Date Of Birth	]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="249" y="0" width="10" height="20" uuid="8d5d82a8-4b57-4b76-bf54-d89aaab5fd20"/>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="249" y="20" width="10" height="18" uuid="b8e89526-755e-43ed-b6b9-db1b167d214d"/>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="260" y="0" width="260" height="20" uuid="f2932563-d7f1-478d-b8c9-82c04fa3432c"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="260" y="20" width="260" height="18" uuid="c724ab5f-2726-48e8-9401-5abb9b652dd6"/>
+                <textFieldExpression><![CDATA[$F{dateOfBirth}]]></textFieldExpression>
+            </textField>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="647" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="180" height="20" uuid="a2f1df08-cc3e-419c-95a5-120a1699aed6"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[1. Summary of Experience]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="20" width="560" height="40" uuid="3b5b0e79-45b6-4caf-910f-ba4bb71b95c9"/>
+                <textElement>
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[I have been working in IT Industry for one month working experience as Java Developer and four month training as JAVA Developer]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="60" width="180" height="20" uuid="d26a783b-ffc3-4772-bded-d103a0610d32"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[2. Specifiec Experience and Skills]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="80" width="100" height="20" uuid="bff8f406-3538-4579-86b7-58821fa01c07"/>
+                <textElement>
+                    <font size="9" isBold="true" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Area]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="80" width="460" height="20" uuid="e8cd0621-0cef-49df-898f-bc282faa2cc0"/>
+                <textElement>
+                    <font size="9" isBold="true" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Details]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="100" width="460" height="20" uuid="03f9a2da-0760-4327-adb2-e5e66d76fb90"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Windows base, Centos	]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="100" width="100" height="20" uuid="0c783244-a2ce-42b5-ad2c-46ba96eebb7e"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Operating System]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="120" width="460" height="20" uuid="92b880a2-b362-4385-9d46-270f4c6ea787"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[MySql, postgreSQL]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="120" width="100" height="20" uuid="1d2f6911-b3bc-481a-81e4-2a2b3f76ab2a"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Database System]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="140" width="460" height="20" uuid="d710bf20-8b3c-4f87-890f-36361de2884b"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Java,Spring MVC, Hibernate, Eclipse IDE, Intelij, Maven, HTML]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="140" width="100" height="20" uuid="742ac383-6d4a-4d03-8fbe-ff1123c54693"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Programming Languages]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="160" width="460" height="20" uuid="457221be-278a-46f9-aaa9-346db05c8686"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Git]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="160" width="100" height="20" uuid="2a0ada62-1cd4-4e75-92b3-39ec64aa24ed"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Source Versioning]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="220" width="100" height="20" uuid="c50d709f-9804-4f48-b552-c40ebb0acd71"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Architecture]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="200" width="100" height="20" uuid="a8887cc8-1a5c-4253-ab2f-05c008c8e3dd"/>
+                <textElement>
+                    <font size="7.5" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Software Development Life Cycle]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="180" width="100" height="20" uuid="72a6f1ca-ccd7-4f37-943a-bc420d9a74b9"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Other Technology]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="240" width="100" height="20" uuid="04e079a1-dd54-45fa-a6ab-9493d8790f29"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Project Management]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="180" width="460" height="20" uuid="38c2c3a1-16a2-4ca6-bb01-dc67a619d579"/>
+                <textElement>
+                    <font size="7.5" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[COM+,XML,HTML,Spring Boot, Spring MVC,Jasper Report,Hibernate,JPA,Maven,Putty,Birt Report, AdobeDreamweaver,Android Studio]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="200" width="460" height="20" uuid="12d2bcbb-4072-4b6b-8175-b64a0e90ab07"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[User requirement, architecture and design, development and test, post-production support and documentation]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="220" width="460" height="20" uuid="32c1db03-4d2a-4ff4-b5fa-3f77bc66ea8c"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[User-end product, back-end integration and reports management]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="240" width="460" height="20" uuid="ef35db57-8ef7-46dc-951b-2b740acf1af1"/>
+                <textElement>
+                    <font size="8" isBold="false" isItalic="false"/>
+                </textElement>
+                <text><![CDATA[Project Mehodology, Project Life Cycle, Project Process Group]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="270" width="180" height="20" uuid="a6120458-759c-4003-b3c6-cf1d152a2691"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[3. Professional Experiences]]></text>
+            </staticText>
+            <frame>
+                <reportElement x="0" y="290" width="550" height="100" uuid="ad4acd8f-64ba-47b8-99e7-5ca556855d82"/>
+                <staticText>
+                    <reportElement x="0" y="0" width="100" height="20" uuid="42d64422-7308-4b28-948c-0785a81b948a"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Project Name :]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="20" width="100" height="20" uuid="3fdb4c8d-af5e-468a-9029-b7427b95d52c"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Company	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="40" width="100" height="20" uuid="7a006747-9176-4938-b859-11a1e264acbe"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Role & Responsibilities :]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="60" width="100" height="20" uuid="1a3639b0-5b07-48c1-aa9c-49eb6c64c741"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Client	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="80" width="100" height="20" uuid="24bf1184-fef6-4ea2-b4f5-a067378f2937"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Duration	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="40" width="450" height="20" uuid="18d421fd-d39d-4aad-a3f3-455d3d1dc760"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Java Developer]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="60" width="450" height="20" uuid="e782be20-716c-4f62-a1c9-ae03e34774de"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Pt. PNM Investment Management]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="20" width="450" height="20" uuid="53230486-9647-4e82-95e9-03324d2de605"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Jatis Solutions]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="0" width="450" height="20" uuid="1900aefc-77a2-42cd-8193-adeab0e04789"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[PNM Implement Investment Portal]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="80" width="450" height="20" uuid="d741fdf4-015f-44fc-9669-7c41bbcd37f6"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[August 2019 - now]]></text>
+                </staticText>
+            </frame>
+            <frame>
+                <reportElement x="0" y="398" width="550" height="100" uuid="bd6d4819-9b16-4ed1-a24d-8a26fa49b86f"/>
+                <staticText>
+                    <reportElement x="0" y="0" width="100" height="20" uuid="130b6ee3-70ee-405e-a60b-eb21baa7d170"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Project Name :]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="20" width="100" height="20" uuid="9003a070-10a9-4f3b-ac4f-3647ffbaea26"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Company	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="40" width="100" height="20" uuid="7e9f5886-3bd5-4170-9bd6-6af0be926c29"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Role & Responsibilities	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="60" width="100" height="20" uuid="5335ca4d-6c89-4144-ab84-d8ff471a88d3"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Client	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="80" width="100" height="20" uuid="eb4d6d92-050e-4a3a-a0a2-ab14bb203e51"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Duration	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="40" width="450" height="20" uuid="c629f9e7-cb48-4686-9d66-549cd9b7b31a"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Java Developer ]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="60" width="450" height="20" uuid="dc69b80a-c7e2-4905-95f5-698b5104f4cb"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Jatis Solutions]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="20" width="450" height="20" uuid="111b4f40-2b6c-4dd7-b5c1-f084765eaf6e"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Pradipta Jatis Indonesia]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="0" width="450" height="20" uuid="308049b6-f2fe-43bc-a8bf-9d19b44b3d5e"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[CAReady Bluebird]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="100" y="80" width="450" height="10" uuid="ce173d64-9caa-465f-bf69-816eaa5d3a92"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[December 2018 - July 2019]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="0" y="104" width="180" height="20" uuid="39dad561-83c4-40a9-98c0-364324200a69"/>
+                    <textElement>
+                        <font size="12"/>
+                    </textElement>
+                    <text><![CDATA[4. Formal Education]]></text>
+                </staticText>
+            </frame>
+            <frame>
+                <reportElement x="0" y="522" width="550" height="118" uuid="5b14810b-04d5-4d9b-ae4a-7ecc9685d5fd"/>
+                <staticText>
+                    <reportElement x="0" y="0" width="100" height="20" uuid="52fe923e-586f-4b6d-b0a6-0950d714d87b"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Vocational  High School]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="30" y="20" width="100" height="20" uuid="57d92446-808a-4b2e-9e8d-7213d06e897b"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Field Of Study]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="30" y="40" width="100" height="20" uuid="58f75d01-2312-4e7c-bf7c-a019513877a6"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Major 		:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="30" y="60" width="100" height="20" uuid="f8184825-f046-446f-8227-c2fb28dae903"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Institution / College 	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="30" y="80" width="100" height="20" uuid="a537e46f-dc1b-4d4f-b5d5-ac153a602d32"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Graduation		:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="130" y="40" width="390" height="20" uuid="f321225e-10f0-485a-b446-24c23acd261b"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Technic Electronic Communication]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="130" y="60" width="390" height="20" uuid="9a197012-7e61-4bdd-9639-7c68246ca786"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[SMKN 26 Jakarta]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="130" y="20" width="390" height="20" uuid="5042d4f8-abdd-4f57-8cf6-2b01c57e1935"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Electronics]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="130" y="80" width="390" height="20" uuid="6b018943-12e0-4d08-a130-e651b436a699"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[2018]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="30" y="100" width="100" height="18" uuid="34b7b688-aece-4dfb-b799-e9400f4fca48"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[Final Score	:]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement x="130" y="100" width="390" height="18" uuid="9764b324-14f6-4b78-a3bf-f88d63e013db"/>
+                    <textElement>
+                        <font size="8"/>
+                    </textElement>
+                    <text><![CDATA[7,4]]></text>
+                </staticText>
+            </frame>
+        </band>
+    </detail>
+</jasperReport>

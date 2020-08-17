@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Product Manager</title>
+</head>
+<body>
+<div align="center">
+    <h1>Product List</h1>
+    <a href="/new_user">Create New User</a>
+    <br/><br/>
+    <div class="search-container">
+        <form action="/search">
+            <input type="text" name="search" id="search"/>
+            <input type="submit" value="Search"/>
+    <table border="1" cellpadding="10">
+        <thead>
+        <tr>
+            <th>No.</th>
+            <th>User</th>
+            <th>Created</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${listUser}">
+            <td th:text="${user.getUserId()}">No.</td>
+            <td th:text="${user.getUser()}">User</td>
+            <td th:text="${user.getCreated()}">Created</td>
+            <td th:text="${user.getStatus()}">Status</td>
+            <td>
+                <a  th:href="@{'/edit/' + ${user.getUserId()}}">Edit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a  th:href="@{'/delete/' + ${user.getUserId()}}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+</div>
+    <td th:if="${listUser.totalPages > 0}" class="pagination"
+         th:each="pageNumber : ${pageNumbers}">
+        <a th:href="@{/(size=${listUser.size}, page=${pageNumber})}"
+           th:text=${pageNumber}
+           th:class="${pageNumber==listUser.number + 1} ? active"></a>
+    </td>
+</div>
+<body>
+<h3>Reports</h3>
+<form action="/report">
+    <label for="id">Input employee ID:</label><br>
+    <input type="text" id="id" name="id"><br>
+    <input type="submit" value="Submit">
+</form>
+<!--<a href="/report" target="_blank">Generate Report</a>-->
+
+</body>
+<script>
+    function confirmDelete() {
+        var r = confirm("Apakah anda yakin untuk menghapus data?");
+        if (r === true) {
+            document.getElementById("yes")
+        }
+    }
+</script>
+</body>
+</html>
